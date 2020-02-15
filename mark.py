@@ -4,6 +4,8 @@ import html
 import pickle
 import os
 import csv
+import traceback
+import sys
 
 HTML_1 = r"""
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
@@ -74,14 +76,19 @@ class MarkApp:
         csvfile.close()
 
     def openfile(self):
+        self.savefile()
+
         filename, x = QFileDialog.getOpenFileName(self.widget, "Open File")
         if not filename:
             return
         
         try:
             items = list(readfile(filename))
+            assert len(items) > 0
         except Exception as ex:
-            QMessageBox.about(self.widget, "Error", "Cannot open file.")
+            exc = traceback.format_exc()
+            print(exc, file=sys.stderr)
+            QMessageBox.about(self.widget, "Error", "Cannot open file.\n" + exc)
             return
 
         pklfile = filename + ".pkl"
