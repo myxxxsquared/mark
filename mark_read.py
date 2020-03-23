@@ -43,7 +43,7 @@ def readitem(it):
 
     for item in splititems(it):
         assert item[0].startswith('uid: ') and len(item[0]) == 41
-        uid = item[0][5:-1]
+        uid = item[0][5:]
 
         itemlen = len(item)
 
@@ -73,7 +73,7 @@ def readitem(it):
         yield uid, freq, words, title1, detail1, title2, detail2, title3, detail3
 
 def readfile(filename):
-    f = open(filename)
+    f = open(filename, encoding='utf-8')
     f = iter(f)
     return readitem(f)
 
