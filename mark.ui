@@ -60,7 +60,7 @@
         </sizepolicy>
        </property>
        <property name="text">
-        <string>&lt;</string>
+        <string>&lt;(&amp;A)</string>
        </property>
       </widget>
      </item>
@@ -73,7 +73,7 @@
         </sizepolicy>
        </property>
        <property name="text">
-        <string>&gt;</string>
+        <string>&gt;(&amp;D)</string>
        </property>
       </widget>
      </item>
@@ -99,7 +99,7 @@
         <string notr="true"/>
        </property>
        <property name="text">
-        <string>能生成注释</string>
+        <string>能生成注释(&amp;7)</string>
        </property>
       </widget>
      </item>
@@ -112,7 +112,7 @@
         </sizepolicy>
        </property>
        <property name="text">
-        <string>不能生成注释</string>
+        <string>不能生成注释(&amp;8)</string>
        </property>
       </widget>
      </item>
@@ -138,7 +138,7 @@
         <string notr="true"/>
        </property>
        <property name="text">
-        <string>能生成代码</string>
+        <string>能生成代码(&amp;4)</string>
        </property>
       </widget>
      </item>
@@ -151,7 +151,7 @@
         </sizepolicy>
        </property>
        <property name="text">
-        <string>不能生成代码</string>
+        <string>不能生成代码(&amp;5)</string>
        </property>
       </widget>
      </item>
@@ -177,7 +177,7 @@
         <string notr="true"/>
        </property>
        <property name="text">
-        <string>代码有问题</string>
+        <string>代码有问题(&amp;1)</string>
        </property>
       </widget>
      </item>
@@ -190,7 +190,7 @@
         </sizepolicy>
        </property>
        <property name="text">
-        <string>代码没有问题</string>
+        <string>代码没有问题(&amp;2)</string>
        </property>
       </widget>
      </item>
